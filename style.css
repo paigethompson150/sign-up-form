@@ -100,7 +100,7 @@ main {
 .mission-statement, .sign-up{
   min-height: 30%;
   max-height: 30%;
-  background-color: rgba(252, 243, 243, 0.986);
+  background-color: rgba(230, 230, 230, 0.82);
 }
 
 .mission-statement{
@@ -114,6 +114,7 @@ main {
 .statement-box{
   width: min(75%, 80%);
   margin-bottom: -40px;
+  font-weight:bold;
 }
 
 .catch {
@@ -137,7 +138,7 @@ main {
 .submit-button {
   font-size: 1.2em;
   border: none;
-  background-color: darkgreen;
+  background-color:#596D48;
   color: white;
   border-radius: 8px;
   box-shadow: 0 3px 5px rgb(132, 120, 120);
@@ -175,6 +176,7 @@ main {
 
 .form input{
   width: 200px;
+  border: 1px solid #E5E7EB;
 }
 
 .form-item {
@@ -191,8 +193,33 @@ main {
   padding-left: 50px;
 }
 
+.form-text{
+  padding-top: 0;
+  font-weight: strong;
+  font-size: 1.2em;
+}
+
 input:active{
-  border: 2px solid blue;
+  border: 2px solid rgb(43, 43, 60);
+  box-shadow:#504f52
+}
+
+.log-in{
+  color: #596D48;
+  transition: 30ms all ease-in-out;
+  cursor: pointer;
+}
+
+.log-in:hover{
+  color: rgb(2, 80, 2);
+}
+
+input:invalid{
+  border-color: 1px solid maroon;
+}
+
+input:valid{
+  border-color: 1px solid green;
 }
 
 em {font-style: italic;}

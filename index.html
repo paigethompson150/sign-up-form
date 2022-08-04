@@ -36,41 +36,45 @@
        
       </div>
 
+
       <div class="form">
-        <form action="example.com/path" method="gets" id="form">
+        <div class="form-container form-text">
+          <h1>Let's do this!</h1>
+        </div>
+        <form action="#" method="gets" id="form">
           <div class="form-container">
             <div class="form-item">
-              <label for="firstName">First Name:</label>
-              <input type="text" id="firstName" name="firstName" placeholder="John">
+              <label for="firstName">*First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required>
             </div>
 
             <div class="form-item">
-              <label for="lastName">Last Name:</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Smith">
+              <label for="lastName">*Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
             </div>
           </div>
 
           <div class="form-container">
             <div class="form-item">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="john.smith@gmail.com">
+              <label for="email">*Email</label>
+              <input type="email" id="email" name="email" placeholder="john.smith@gmail.com" required>
             </div>
 
             <div class="form-item">
               <label for="phone-number">Phone Number</label>
-              <input type="tel" id="phone-number" name="phone-number" placeholder="+1 (___) ___-____" data-slots="_" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              <input type="tel" id="phone-number" name="phone-number" placeholder="+1 (___) ___-____" data-slots="_" title="Please make sure that number is in the format: 123-456-7890"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               required>
             </div>
           </div>
 
           <div class="form-container">
             <div class="form-item">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password" required>
+              <label for="password">*Password</label>
+              <input type="password" id="password" name="password" title="Please make sure that passwords match." required>
             </div>
 
             <div class="form-item">
-              <label for="confirm-password">Password</label>
+              <label for="confirm-password">*Confirm Password</label>
               <input type="password" id="confirm-password" name="confirm-password" required>
             </div>
           </div>
@@ -80,10 +84,10 @@
 
       <div class="sign-up">
         <div class="button">
-          <button class="submit-button" form="form" role="button" value="reset" id='reset' type="reset">Create Account</button>
+          <button class="submit-button" form="form" role="button" value="submit" id='submit' type="submit">Create Account</button>
         </div>
         <div class="login">
-          <p>Already have an account? Log in</p>
+          <p>Already have an account? <span class="log-in">Log in</span></p>
         </div>
       </div>
 
