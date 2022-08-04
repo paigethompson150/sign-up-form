@@ -100,7 +100,7 @@ main {
 .mission-statement, .sign-up{
   min-height: 30%;
   max-height: 30%;
-  background-color: rgba(230, 230, 230, 0.82);
+  background-color: rgb(0, 0, 0);
 }
 
 .mission-statement{
@@ -115,6 +115,7 @@ main {
   width: min(75%, 80%);
   margin-bottom: -40px;
   font-weight:bold;
+  line-height: 25px;
 }
 
 .catch {
@@ -124,6 +125,7 @@ main {
 
 .right-background {
   min-width: 60%;
+  color: rgb(219, 215, 215);
 }
 
 .sign-up{
@@ -172,15 +174,19 @@ main {
   min-height: 40%;
   padding-top: 30px;
   padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .form input{
   width: 200px;
   border: 1px solid #E5E7EB;
+  background-color: rgba(0, 0, 0, 0.9);
+  color:rgba(153, 153, 153, 0.902)
 }
 
 .form-item {
   padding-right: 70px;
+  color:rgba(153, 153, 153, 0.902)
 }
 
 .form-item label {
