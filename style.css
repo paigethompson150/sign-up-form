@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+}
+
+/* end of reset */
+
+
+main {
+  display: flex;
+}
+
+.left-background{
+  background-image: url(images/wasa-crispbread-lcSfW7qkA-E-unsplash.jpg);
+  height: 100vh;
+  min-width: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-box{
+  min-width: 40%;
+  min-height: 20%;
+  margin-top: 100px;
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box img {
+  opacity: 1.0;
+  width: 75px;
+}
+
+.credit {
+  position: fixed;
+  bottom: 20px;
+  min-width: 40%;
+  text-align: center;
+  color: white;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.mission-statement, .sign-up{
+  min-height: 30%;
+  max-height: 30%;
+  background-color: rgba(252, 243, 243, 0.986);
+}
+
+.mission-statement{
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.statement-box{
+  width: min(75%, 80%);
+  margin-bottom: -40px;
+}
+
+.catch {
+  position: relative;
+  bottom: -30px;
+}
+
+.right-background {
+  min-width: 60%;
+}
+
+.sign-up{
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.button {
+  padding-left: 20px;
+}
+
+.submit-button {
+  font-size: 1.2em;
+  border: none;
+  background-color: darkgreen;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgb(132, 120, 120);
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0.25em 0.75em;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  line-height: 1.1;
+  transition: 220ms all ease-in-out;
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentcolor;
+  }
+}
+
+.submit-button:hover{
+  background-color: rgb(2, 80, 2);
+}
+
+.submit-button:active{
+  background-color: lightgrey;
+  color: black;
+  transition: 30ms all ease-in-out;
+}
+
+.login {
+  padding-top: 20px;
+}
+
+.form {
+  min-height: 40%;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.form input{
+  width: 200px;
+}
+
+.form-item {
+  padding-right: 70px;
+}
+
+.form-item label {
+  display: block;
+}
+
+.form-container {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+input:active{
+  border: 2px solid blue;
+}
+
+em {font-style: italic;}

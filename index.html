@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <stript src="script.js"></stript>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Wasa Crispbread on Unsplash.com credits for nature one-->
+  <main>
+    <!-- left side of page-->
+    <div class="left-background">
+      <div class="logo-box">
+        <img src="images/odin-lined.png" alt="">
+        <h1>PAGU</h1>
+      </div>
+  
+      <div class="credit">
+        <p>Photo by <span class="underline">Wasa Crispbread</span> on <span class="underline">Unsplash</span></p>
+      </div>
+    </div>
+    <!-- right side of page-->
+    <div class="right-background">
+      <div class="mission-statement">
+        <h1 class="statement-box">This is not a real online service! You know you need something like this in your life to help you realize your 
+          deepest dreams. Sign up <em>now</em> to get started.
+          <br>
+          <span class="catch">You <em>know</em> you want to.</span>
+        </h1>
+       
+      </div>
+
+      <div class="form">
+        <form action="example.com/path" method="gets" id="form">
+          <div class="form-container">
+            <div class="form-item">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John">
+            </div>
+
+            <div class="form-item">
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith">
+            </div>
+          </div>
+
+          <div class="form-container">
+            <div class="form-item">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john.smith@gmail.com">
+            </div>
+
+            <div class="form-item">
+              <label for="phone-number">Phone Number</label>
+              <input type="tel" id="phone-number" name="phone-number" placeholder="+1 (___) ___-____" data-slots="_" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required>
+            </div>
+          </div>
+
+          <div class="form-container">
+            <div class="form-item">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-item">
+              <label for="confirm-password">Password</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="sign-up">
+        <div class="button">
+          <button class="submit-button" form="form" role="button" value="reset" id='reset' type="reset">Create Account</button>
+        </div>
+        <div class="login">
+          <p>Already have an account? Log in</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
